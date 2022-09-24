@@ -9,7 +9,7 @@ function App() {
     <div>
       <Header />
       <Logo />
-      <Footer />
+      <Footer title='Facebook' province='Korat' postcode={30000} />
     </div>
   );
 }

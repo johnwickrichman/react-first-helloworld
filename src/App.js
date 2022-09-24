@@ -9,7 +9,7 @@ function App() {
     <div>
       <Header />
       <Logo />
-      <Footer title='Facebook' province='Korat' postcode={30000} />
+      <Footer title='Facebook' province='Korat' postcode={30000} isOpen={true} />
     </div>
   );
 }

@@ -14,6 +14,10 @@ const Header = () => {
 
   const isLogin = true
 
+  const showMe = () => {
+    alert('แสดงฟังก์ชั่น แต่ตอนใส่ชื่อ ไม่ต้องใส่ ()')
+  }
+
   return (
     <>
       <h1>Header 2022 and {companyName}</h1>
@@ -37,6 +41,8 @@ const Header = () => {
 
       {isLogin && <Logo />}
       <hr />
+
+      <button onClick={showMe}>ลองกดดูสิ</button>
     </>
   )
 }

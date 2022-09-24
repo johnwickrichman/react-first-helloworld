@@ -1,7 +1,7 @@
 import React from "react"
+import Logo from "./Logo"
 
 const Header = () => {
-
   let companyName = "ToolaCorporation"
   let companyAddress = <p>Korat</p>
 
@@ -9,10 +9,10 @@ const Header = () => {
   let b = 20
 
   const showMessage = () => {
-    return companyName + ".com"
+    return `${companyName}.com - ลองใช้ function ใน JSX`
   }
 
-  const isLogin = true;
+  const isLogin = true
 
   return (
     <>
@@ -22,15 +22,21 @@ const Header = () => {
       <p>{showMessage()}</p>
       <hr />
 
-     { isLogin && <p>แสดงว่า isLogin เป็นจริง</p>}
+      {isLogin === true && <p>แสดงว่า isLogin เป็นจริง แบบที่ 1</p>}
 
-     { isLogin ? (
-      <p>isLogin เป็นจริง</p>
-     ) : (
-      <p>isLogin เป็นเท็จ</p>
-     )}
+      {isLogin && <p>แสดงว่า isLogin เป็นจริง แบบที่ 2</p>}
 
+      {isLogin && (
+        <>
+          <p>แสดงว่า isLogin เป็นจริง แบบที่ 3</p>
+          <p>แสดงว่า isLogin เป็นจริง แบบที่ 3</p>
+        </>
+      )}
 
+      {isLogin ? <p>isLogin เป็นจริง</p> : <p>ไม่มีสิทธิ์ดูโลโก้นะจ๊ะ</p>}
+
+      {isLogin && <Logo />}
+      <hr />
     </>
   )
 }

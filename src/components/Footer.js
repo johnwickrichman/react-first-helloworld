@@ -1,4 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types';
+
 
 const Footer = (props) => {
 
@@ -22,6 +24,14 @@ const Footer = (props) => {
 
     </div>
   )
+}
+
+
+Footer.propTypes = {
+  title: PropTypes.string,
+  province: PropTypes.string,
+  postcode: PropTypes.number,
+  isOpen: PropTypes.bool
 }
 
 export default Footer

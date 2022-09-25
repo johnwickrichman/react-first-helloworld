@@ -1,5 +1,5 @@
 import React from "react"
-import Logo from "./Logo"
+import Footer from "./Footer"
 
 const Header = () => {
   let companyName = "ToolaCorporation"
@@ -45,7 +45,7 @@ const Header = () => {
 
       {isLogin ? <p>isLogin เป็นจริง</p> : <p>ไม่มีสิทธิ์ดูโลโก้นะจ๊ะ</p>}
 
-      {isLogin && <Logo />}
+      {isLogin && <Footer />}
       <hr />
 
       <button onClick={showMe}>ลองกดดูสิ</button>

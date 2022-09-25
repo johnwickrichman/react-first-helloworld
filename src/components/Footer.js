@@ -16,14 +16,22 @@ const Footer = (props) => {
         {
           isOpen && (
             <>
-            <p>ส่ง Boolean ผ่าน props สำเร็จแล้ว</p>
-            <p>ค่าที่ส่งมาคือ : {isOpen.toString()}</p>
+            <p style={{color:'green', fontSize: 25}}>ส่ง Boolean ผ่าน props สำเร็จแล้ว</p>
+            <p style={styles.title}>ค่าที่ส่งมาคือ : {isOpen.toString()}</p>
             </>
           )
         }
 
     </div>
   )
+}
+
+
+const styles = {
+  title: {
+    color: 'red',
+    fontSize: 30,
+  }
 }
 
 

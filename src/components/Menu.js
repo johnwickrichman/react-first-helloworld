@@ -14,7 +14,8 @@ const Menu = () => {
         }
 
         {/* <img onMouseOver={mouseOver} onMouseOut={mouseOut} src='./logo192.png' alt="logo" /> */}
-        <img onMouseOver={attrs.onMouseOver} onMouseOut={attrs.onMouseOut} src='./logo192.png' alt="logo" />
+        {/* <img onMouseOver={attrs.onMouseOver} onMouseOut={attrs.onMouseOut} src='./logo192.png' alt="logo" /> */}
+        <img {...attrs} src='./logo192.png' alt="logo" />
     </div>
   )
 }

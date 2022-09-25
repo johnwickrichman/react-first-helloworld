@@ -21,7 +21,11 @@ const Sidebar = () => {
         console.log( 'sidebar useEffect onetime only')
     },[])
 
-    
+    React.useEffect( () => {
+        console.log( 'sidebar useEffect from fullname =>' + fullname)
+    },[fullname])
+
+
   return (
     <>
     <p>Sidebar</p>

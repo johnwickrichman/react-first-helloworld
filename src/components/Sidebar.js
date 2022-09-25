@@ -13,6 +13,15 @@ const Sidebar = () => {
         setIsShow(!isShow)
     }
 
+    React.useEffect( () => {
+        console.log( 'sidebar useEffect')
+    })
+
+    React.useEffect( () => {
+        console.log( 'sidebar useEffect onetime only')
+    },[])
+
+    
   return (
     <>
     <p>Sidebar</p>

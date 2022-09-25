@@ -3,6 +3,7 @@
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Logo from './components/Logo';
+import Sidebar from './components/Sidebar';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <Logo />
       <Footer title='Facebook' province='Korat' postcode={30000} isOpen={true} />
+      <Sidebar />
     </div>
   );
 }

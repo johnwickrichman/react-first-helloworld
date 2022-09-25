@@ -3,7 +3,7 @@
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Logo from './components/Logo';
-import Menu from './components/Menu';
+import Menu2 from './components/Menu';
 import Sidebar from './components/Sidebar';
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
       <Logo />
       <Footer title='Facebook' province='Korat' postcode={30000} isOpen={true} />
       <Sidebar />
-      <Menu />
+      <Menu2 />
     </div>
   );
 }

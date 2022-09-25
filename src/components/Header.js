@@ -1,4 +1,5 @@
 import React from "react"
+import Title from "../styles/title/Title"
 import Footer from "./Footer"
 
 const Header = () => {
@@ -26,6 +27,10 @@ const Header = () => {
 
   return (
     <>
+    <Title>
+    <p>ทอสอบ Title Style จาก Style Component ไฟล์ title.js</p>
+    </Title>
+    
       <h1>Header 2022 and {companyName}</h1>
       <p>{companyAddress}</p>
       <p>A + B = {a + b + 100}</p>

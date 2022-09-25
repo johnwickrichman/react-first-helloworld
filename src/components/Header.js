@@ -32,7 +32,7 @@ const Header = () => {
     ทดสอบ Title Style จาก Style Component ไฟล์ title.js
     </Title>
 
-    <Button>ปุ่มธรรมดา</Button>
+    <Button onClick={showMe}>ปุ่มธรรมดา</Button>
     <Button primary>ปุ่มธรรมดา</Button>
 
     

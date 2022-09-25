@@ -12,14 +12,14 @@ const useHover = () => {
         setHover(false)
     }
 
-    // const attrs = {
-    //     mouseOver: mouseOver,
-    //     mouseOut: mouseOut
+    const attrs = {
+        onMouseOver: mouseOver,
+        onMouseOut: mouseOut
 
-    // }
+    }
 
-    // return [ hover, attrs]
-    return [ hover, mouseOver, mouseOut]
+    return [ hover, attrs]
+    // return [ hover, mouseOver, mouseOut]
 
 }
 

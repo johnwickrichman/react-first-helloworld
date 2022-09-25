@@ -4,7 +4,7 @@ import useHover from '../hooks/UseHover'
 
 const Logo = () => {
 
-  const [ hover, mouseOver, mouseOut ] = useHover()
+  const [ hover, attrs ] = useHover()
 
     const logoImage = {
         url: './logo192.png'
@@ -13,7 +13,7 @@ const Logo = () => {
   return (
     <div>
         {/* <img src="./logo192.png" width="100" alt="logo" /> */}
-        <img onMouseOver={mouseOver} onMouseOut={mouseOut} src={logoImage.url} width="100" alt="logo" />
+        <img onMouseOver={attrs.onMouseOver} onMouseOut={attrs.onMouseOut} src={logoImage.url} width="100" alt="logo" />
         {
           hover ? <p>Hello Logo</p> : null
         }

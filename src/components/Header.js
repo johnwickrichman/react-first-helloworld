@@ -1,4 +1,5 @@
 import React from "react"
+import Button from "../styles/button/Button"
 import Title from "../styles/title/Title"
 import Footer from "./Footer"
 
@@ -28,8 +29,12 @@ const Header = () => {
   return (
     <>
     <Title>
-    <p>ทอสอบ Title Style จาก Style Component ไฟล์ title.js</p>
+    ทดสอบ Title Style จาก Style Component ไฟล์ title.js
     </Title>
+
+    <Button>ปุ่มธรรมดา</Button>
+    <Button primary>ปุ่มธรรมดา</Button>
+
     
       <h1>Header 2022 and {companyName}</h1>
       <p>{companyAddress}</p>

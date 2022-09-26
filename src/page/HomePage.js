@@ -3,7 +3,8 @@ import React from "react"
 const HomePage = () => {
   return (
     <>
-      <main>
+
+   <main>
         <div className="container py-4">
 
           <div className="p-5 mb-4 bg-light rounded-3">

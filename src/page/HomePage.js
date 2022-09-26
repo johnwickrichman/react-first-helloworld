@@ -1,11 +1,17 @@
 import React from "react"
+import { BsFillBadge4KFill } from "react-icons/bs";
+import { IoAccessibilitySharp } from "react-icons/io5";
 
 const HomePage = () => {
   return (
     <>
 
+   
+
    <main>
         <div className="container py-4">
+        <BsFillBadge4KFill size="2em" color="red"/>
+        <IoAccessibilitySharp />
 
           <div className="p-5 mb-4 bg-light rounded-3">
             <div className="container-fluid py-5">

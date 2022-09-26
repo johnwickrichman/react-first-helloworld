@@ -1,21 +1,17 @@
-// import logo from './logo.svg';
-// import './App.css';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import Logo from './components/Logo';
-import Menu from './components/Menu';
-import Sidebar from './components/Sidebar';
+import React from "react"
+import Footer from "./components/Footer"
+import NavBar from "./components/NavBar"
+import HomePage from "./page/HomePage"
+// import Button from 'react-bootstrap/Button';
 
 function App() {
   return (
-    <div>
-      <Header />
-      <Logo />
-      <Footer title='Facebook' province='Korat' postcode={30000} isOpen={true} />
-      <Sidebar />
-      <Menu />
-    </div>
-  );
+    <>
+      <NavBar />
+      <HomePage />
+      <Footer />
+    </>
+  )
 }
 
-export default App;
+export default App
